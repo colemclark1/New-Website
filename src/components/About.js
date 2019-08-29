@@ -22,7 +22,7 @@ render() {
   return (
     <div className='container-fluid'>
       <div className='container'>
-        <div className='row header'>About Me</div>
+        <div className='row header'>About Me&nbsp;<i class="fa fa-commenting" aria-hidden="true"></i></div>
           <div className='row offset-1'>
               <p className='p-text'>I am a highly motivated and skilled computer science graduate student at Northeastern University, specializing in artificial intelligence and software engineering. I have extensive knowledge in multiple programming languages, including Java, Python, C, and JavaScript. I enjoy challenges that involve analytical thinking, problem solving, and math. I strive for excellence in everything that I do while looking for learning opportunities to help myself grow. My goal as a software engineer is to build awesome software applications that are fun to use and make life easier for everyone.<br/> <br/>
 

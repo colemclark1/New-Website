@@ -1,0 +1,77 @@
+
+
+.skills {
+  text-align: right;
+  padding: 10px;
+  color: #141414;
+  border-top: 5px #141414 solid;
+  background-color: #13EBA2;
+  animation-duration: 2s; /* the duration of the animation */
+  animation-timing-function: ease-out; /* how the animation will behave */
+  animation-delay: 0s; /* how long to delay the animation from starting */
+  animation-iteration-count: 1; /* how many times the animation will play */
+}
+
+.pt-3 {
+  height: 400px;
+}
+
+
+.java {
+  width: 80%;
+  animation-name: Java; /* the name of the animation we defined above */
+}
+.c {
+  width: 70%;
+  animation-name: C; /* the name of the animation we defined above */
+}
+.python {
+  width: 90%;
+  animation-name: Python; /* the name of the animation we defined above */
+}
+
+.javascript {
+  width: 75%;
+  animation-name: JavaScript; /* the name of the animation we defined above */
+}
+
+.title {
+  position: absolute;
+}
+
+
+@keyframes Java {
+  from {
+    width:20%
+  }
+  to {
+    width: 80%
+  }
+}
+
+@keyframes C {
+  from {
+    width:30%
+  }
+  to {
+    width: 70%
+  }
+}
+
+@keyframes Python {
+  from {
+    width:10%
+  }
+  to {
+    width: 90%
+  }
+}
+
+@keyframes JavaScript {
+  from {
+    width:25%
+  }
+  to {
+    width: 75%
+  }
+}

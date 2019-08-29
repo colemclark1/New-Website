@@ -1,0 +1,70 @@
+.p-text {
+  text-align: left;
+  font-size: 18px;
+  font-family: 'Nunito', sans-serif;
+  padding-top: 10px;
+}
+
+.page-headers {
+    font-family: 'Nunito', sans-serif;
+}
+
+.header {
+  color: #13EBA2;
+  background-color: #141414;
+  font-size: 24px;
+  border-bottom: 2px solid #13EBA2;
+}
+
+.picture-row {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+.p-text {
+  color: #13EBA2;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.skills-row {
+  background-color: #141414;
+  padding-top: 20px;
+}
+
+
+.skills-text {
+  text-align: left;
+  font-size: 18px;
+  font-family: 'Nunito', sans-serif;
+}
+
+
+
+.language {
+  display: flex;
+}
+
+.lang-text {
+  display: flex;
+  flex: 1 0 50%;
+  align-items: center;
+  justify-content: center;
+  color: white
+}
+
+.tint-bg {
+  padding-bottom: 40px;
+}
+
+.container-fluid {
+    padding-right:0;
+    padding-left:0;
+    margin-right:auto;
+    margin-left:auto
+ }

@@ -1,0 +1,31 @@
+.nav-item:hover {
+    border-bottom: 3px solid white;
+    color: white;
+}
+
+.nav-item {
+  font-family: 'Nunito', sans-serif;
+  color: #13EBA2;
+  border-bottom: 3px solid #141414;
+}
+
+.nav-brand {
+  color: #13EBA2;
+  border-bottom: 3px solid #141414;
+  font-family: 'Courgette', cursive;
+}
+
+.nav-brand:hover {
+    border-bottom: 3px solid white;
+    color: white;
+}
+
+.cursive-font {
+  font-family: 'Courgette', cursive;
+  color: white;
+}
+
+.nav-bg {
+    background-color: #141414;
+    max-width: 100vw;
+}

@@ -1,0 +1,52 @@
+.homepage-bg{
+  min-height: 100vh;
+  background-color: #141414;
+}
+
+.change-font {
+  font-family: Roboto;
+  color: white;
+}
+
+.about {
+  color: white;
+}
+
+.font-color-black {
+  color: black
+}
+
+.cards-change-fonts {
+  color: black;
+  font-family: Roboto;
+}
+
+.header {
+  background-color: black;
+}
+
+.outer-card{
+  margin-bottom: 50px;
+  margin-right: 20px;
+}
+
+
+.cursive-font {
+  font-family: 'Courgette', cursive;
+  color: white;
+}
+
+
+.page-headers {
+    font-family: 'Nunito', sans-serif;
+}
+
+.regular-font {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.bottom-portion {
+  background-color: gray
+}

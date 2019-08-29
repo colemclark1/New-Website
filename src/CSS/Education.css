@@ -1,0 +1,27 @@
+.edu-image {
+  max-width: 170px;
+  max-height: 170px;
+}
+
+.edu-text{
+  color: white;
+}
+
+.edu-item {
+  padding: 10px;
+}
+
+.section-header{
+  border-bottom: 3px solid white;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+}
+
+.education-font {
+    font-family: 'Nunito', sans-serif;
+    padding-bottom: 10px
+}
+
+.full-table {
+
+}

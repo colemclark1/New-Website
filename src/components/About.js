@@ -6,6 +6,10 @@ import Slideshow from './Slideshow'
 import NavBar from './NavBar'
 import SkillBars from './SkillBars'
 import PictureRow from './PictureRow'
+import Experience from './Experience'
+import IMG_Schellman from '..\\images\\Schellman.jpg';
+import IMG_EY from '..\\images\\EY.jpg';
+import IMG_CAI from '..\\images\\CAI.jpg';
 
 
 class About extends Component {
@@ -39,7 +43,15 @@ render() {
             </div>
           </div>
           </div>
-    </div>
+
+          <div className='container'>
+            <div className='row header'>Experience</div>
+              <div className='row exp-block'>
+              <Experience/>
+              </div>
+            </div>
+            </div>
+
     )
   }
 }

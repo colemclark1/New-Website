@@ -6,9 +6,6 @@ import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import '../node_modules/font-awesome/css/font-awesome.min.css';
 import './index.css'
 
-
-
-
 ReactDOM.render(
   <div className='index'>
   <link href="https://fonts.googleapis.com/css?family=Courgette|Permanent+Marker" rel="stylesheet"/>

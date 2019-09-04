@@ -2,6 +2,7 @@
   "name": "personal-website-april-2019",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://colemclark1.github.io/",
   "dependencies": {
     "@material-ui/core": "^3.9.3",
     "@material-ui/icons": "^3.0.2",
@@ -43,5 +44,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+  "gh-pages": "^1.2.0"
   }
 }

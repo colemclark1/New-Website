@@ -4,7 +4,9 @@ import '../CSS/ExperienceBlock.css'
 
 const ExperienceBlock = ({company, image, job_title, time, description, website_link, website_link_text}) =>
     <div className="p-4 row">
-      <img src={image} className="ExpLogos col-2" alt=""/>
+      <div className='col-2'>
+        <span class="helper"></span><img src={image} className="ExpLogos" alt=""/>
+      </div>
       <div className="ExperienceText col-10">
         <div className='row align-items-center'>
           <p className="Company col-6">{company}</p>

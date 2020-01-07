@@ -15,6 +15,7 @@ const NavBar = ({theme}) => {
             <Nav className="mr-auto">
                 <Link to='/about' className="nav-link"><p className='nav-item'>About</p></Link>
                 <Link to='/projects' className="nav-link"><p className='nav-item'>Projects</p></Link>
+                <Link to='/experience' className="nav-link"><p className='nav-item'>Experience</p></Link>
                 <Link to='/education' className="nav-link"><p className='nav-item'>Education</p></Link>
                 <Link to='/contact' className="nav-link"><p className='nav-item'>Contact</p></Link>
             </Nav>

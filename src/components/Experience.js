@@ -5,13 +5,14 @@ import IMG_Schellman from '..\\images\\Schellman.svg';
 import IMG_EY from '..\\images\\EY.svg';
 import IMG_CAI from '..\\images\\CAI.jpg';
 import IMG_MORSE from '..\\images\\dragon.svg'
+import '../CSS/Experience.css'
 var experience = [
   {
     "company": 'MORSE Corp',
     "image": IMG_MORSE,
     "job_title": "Software Engineer Co-op",
-    "time": "June 2019 - Present",
-    "description": "",
+    "time": "June - December 2019",
+    "description": "As a software engineer at MORSE, I performed many different tasks on a team of aerospace and software engineers. Mainly, I programmed and integrated multiple python modules with an open source python library to develop new simulation capabilities. Additionally, I parallelized our application using multiprocessing in python, allowing it to run faster and more frequently. I automated part of our analysis process by gathering and plotting data from thousands of simulations using multiple python libraries like scikit-learn for linear regression, numpy for linear algebra, and matplotlib and plotly for graphing. I was also responsible for designing and implementing a SQLite database using SQLAlchemy and Alembic and project setup using Docker, Jenkins Continuous Integration, and BitBucket.",
     'website_link': 'https://www.morsecorp.com',
     'website_link_text': 'www.morsecorp.com'
   },
@@ -50,20 +51,25 @@ class Experience extends Component {
 
   }
 
-
+  componentDidMount() {
+    this.props.onHomePage(false);
+  }
 
 render() {
   return (
-    <div>
-    {experience.map((exp, index) =>
-      <ExperienceBlock  company={exp.company}
-                        image={exp.image}
-                        job_title={exp.job_title}
-                        time={exp.time}
-                        description={exp.description}
-                        website_link={exp.website_link}
-                        website_link_text={exp.website_link_text} />
-                )}
+    <div className='container-fluid pb-4'>
+      <div className='container col-9'>
+        <div className='row header page-headers'>Experience</div>
+        {experience.map((exp, index) =>
+          <ExperienceBlock  company={exp.company}
+                            image={exp.image}
+                            job_title={exp.job_title}
+                            time={exp.time}
+                            description={exp.description}
+                            website_link={exp.website_link}
+                            website_link_text={exp.website_link_text} />
+                    )}
+          </div>
     </div>
 
 

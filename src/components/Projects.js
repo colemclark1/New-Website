@@ -78,9 +78,10 @@ class Projects extends Component {
 
   render() {
     return (
-      <div>
-          <div className='text-center page-headers'>
-          <CardColumns className='change-font font-color-black mx-4 mt-4'>
+      <div className='container-fluid'>
+        <div className='container col-9 text-center'>
+          <div className='row header page-headers'>Projects</div>
+          <CardColumns className='change-font font-color-black mx-4 mt-4 col-12'>
 
         {projects.map((project, index) => <Project key={index} project={project}/>)}
 

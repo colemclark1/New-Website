@@ -6,6 +6,7 @@
   color: #141414;
   border-top: 5px #141414 solid;
   background-color: #13EBA2;
+  font-family: 'Nunito', sans-serif;
   animation-duration: 2s; /* the duration of the animation */
   animation-timing-function: ease-out; /* how the animation will behave */
   animation-delay: 0s; /* how long to delay the animation from starting */

@@ -1,6 +1,5 @@
 
- .ExperienceText {
-   font-family: 'Nunito', sans-serif;
+ .EducationText {
    border: 2px solid #13EBA2;
    border-radius: 10px;
    display: inline-block;
@@ -11,44 +10,25 @@
    -o-transition: background 1s;
    -ms-transition: background 1s;
    transition: background 1s;
+   font-family: 'Nunito', sans-serif;
  }
 
- .ExperienceText:hover{
+ .EducationText:hover{
    background-color: #515A5A;
  }
 
- .Company {
+ .School {
    font-size: 30px;
  }
 
- .exp-block{
-   margin-top: 15px;
- }
-
- .MyTitle {
-   font-size: 20px;
+ .Degree {
    font-style: italic;
+   line-height: 6px;
  }
 
- .TimeFrame {
-   font-size: 20px;
 
- }
-
- .JobDesc {
-   font-size: 16px;
- }
-
- .CompanySite {
-   font-size: 16px;
- }
- .CompanySite a{
-   color: #4FC3F7;
- }
-
- .ExpLogos {
-   width: 150px;
-   height: 150px;
+ .edu-image {
+   width: 250px;
+   height: 250px;
    vertical-align: middle;
-   display: inline-block;
  }

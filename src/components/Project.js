@@ -39,19 +39,19 @@ render() {
 
           <div className='row justify-content-center'>
           {!this.state.displayDetails &&
-          <button onClick={this.clickDetails}  aria-expanded={false} className='btn details-button justify-content-center'><i className="fa fa-angle-double-down"></i>
+          <button onClick={this.clickDetails}  aria-expanded={false} className='btn details-button justify-content-center'>Details <i className="fa fa-angle-double-down"></i>
           </button>}
 
           {this.state.displayDetails && <button onClick={this.clickDetails} aria-expanded={true} className='btn details-button justify-content-center'><i className="fa fa-angle-double-up"></i>
           </button>}
 
-          <Collapse in={this.state.displayDetails}>
-          <Card.Text>
-            {this.props.project.textShort}
-          </Card.Text>
-        </Collapse>
         </div>
         </Card.Body>
+        <Collapse in={this.state.displayDetails}>
+        <Card.Text>
+          {this.props.project.textShort}
+        </Card.Text>
+      </Collapse>
       </Card>
       </div>
     )

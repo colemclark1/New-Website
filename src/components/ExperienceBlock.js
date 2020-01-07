@@ -3,12 +3,14 @@ import Carousel from 'react-bootstrap/Carousel'
 import '../CSS/ExperienceBlock.css'
 
 const ExperienceBlock = ({company, image, job_title, time, description, website_link, website_link_text}) =>
-    <div className="m-4">
+    <div className="p-4 row">
       <img src={image} className="ExpLogos col-2" alt=""/>
-      <div className="ExperienceText col-9">
-        <p className="Company">{company}</p>
+      <div className="ExperienceText col-10">
+        <div className='row align-items-center'>
+          <p className="Company col-6">{company}</p>
+          <p className="TimeFrame col-6 text-right">{time}</p>
+        </div>
         <p className="MyTitle">{job_title}</p>
-        <p className="TimeFrame">{time}</p>
         <p className="JobDesc">{description}</p>
         <p className="CompanySite"><a href={website_link} target="_blank" rel="noopener noreferrer">{website_link_text}</a></p>
       </div>

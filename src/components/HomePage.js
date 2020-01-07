@@ -4,6 +4,7 @@ import '../CSS/HomePage.css'
 import Projects from './Projects'
 import Contact from './Contact'
 import Education from './Education'
+import Experience from './Experience'
 import About from './About'
 import Main from './Main'
 import NavBar from './NavBar'
@@ -39,6 +40,8 @@ class HomePage extends Component {
               render={(props) => <Contact onHomePage={this.onHomePage}/>} />
             <Route path='/education'exact
               render={(props) => <Education onHomePage={this.onHomePage}/>} />
+            <Route path='/experience'exact
+                render={(props) => <Experience onHomePage={this.onHomePage} />} />
         </Router>
       </div>
     )

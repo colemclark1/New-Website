@@ -28,7 +28,7 @@ class HomePage extends Component {
   render() {
     return (
       <div className='homepage-bg change-font'>
-        <Router>
+        <Router basename={`${process.env.PUBLIC_URL}`}>
           {!this.state.home && <NavBar />}
             <Route path='/'exact
               render={(props) => <Main onHomePage={this.onHomePage} />} />

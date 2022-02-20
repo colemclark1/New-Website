@@ -1,31 +1,31 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../CSS/Main.css";
 
 const Main = () => {
   return (
-    <div className="row main">
-      <div className="text-center col-xl-4 col-lg-5 col-md-6 col-7 tag">
+    <div className="main home-row">
+      <div className="text-center tag first-column">
         <h1 className="cursive-font heading-size">Cole Clark</h1>
         <h3 className="regular-font">Software Engineer</h3>
-        <div className="justify-content-center row">
-          <Link to="/about" className="nav-link">
-            <p className="main-item">About</p>
-          </Link>
-          <Link to="/projects" className="nav-link">
-            <p className="main-item">Projects</p>
-          </Link>
-          <Link to="/experience" className="nav-link">
-            <p className="main-item">Experience</p>
-          </Link>
-          <Link to="/education" className="nav-link">
-            <p className="main-item">Education</p>
-          </Link>
-          <Link to="/contact" className="nav-link">
-            <p className="main-item">Contact</p>
-          </Link>
+        <div className="justify-content-center">
+          <NavLink to="/about" className="menu-item">
+            About
+          </NavLink>
+          <NavLink to="/projects" className="menu-item">
+            Projects
+          </NavLink>
+          <NavLink to="/experience" className="menu-item">
+            Experience
+          </NavLink>
+          <NavLink to="/education" className="menu-item">
+            Education
+          </NavLink>
+          <NavLink to="/contact" className="menu-item">
+            Contact
+          </NavLink>
         </div>
-        <div className="justify-content-center row row-links">
+        <div className="justify-content-center row-links">
           <a
             href="https://www.linkedin.com/in/coleclark1/"
             target="_blank"
@@ -47,7 +47,9 @@ const Main = () => {
           </a>
         </div>
       </div>
-      <div className="col-xl-8 col-lg-7 col-5 col-md-6 pic"></div>
+      <div className='fill second-column'>
+        <img src={require("../images/Me.jpeg")}/>
+      </div>
     </div>
   );
 };

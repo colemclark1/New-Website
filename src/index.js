@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import HomePage from './components/HomePage'
-import Button from '@material-ui/core/Button';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import '../node_modules/font-awesome/css/font-awesome.min.css';
 import './index.css'

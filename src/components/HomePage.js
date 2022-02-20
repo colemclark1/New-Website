@@ -1,51 +1,32 @@
-import React, {Component} from 'react'
-import {HashRouter as Router, Link, Route} from 'react-router-dom'
-import '../CSS/HomePage.css'
-import Projects from './Projects'
-import Contact from './Contact'
-import Education from './Education'
-import Experience from './Experience'
-import About from './About'
-import Main from './Main'
-import NavBar from './NavBar'
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Projects from "./Project/Projects";
+import Contact from "./Contact";
+import Education from "./Education/Education";
+import Experience from "./Experience/Experience";
+import About from "./About";
+import Main from "./Main";
+import NavBar from "./NavBar";
+import "../CSS/HomePage.css";
 
-class HomePage extends Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      home: true
-    }
-  }
-
-  onHomePage = (isTrue) => {
-    this.setState ({
-      home: isTrue
-    })
-  }
-
-
-  render() {
-    return (
-      <div className='homepage-bg change-font'>
-        <Router basename={`${process.env.PUBLIC_URL}`}>
-          {!this.state.home && <NavBar />}
-            <Route path='/'exact
-              render={(props) => <Main onHomePage={this.onHomePage} />} />
-            <Route path='/about' exact
-              render={(props) => <About onHomePage={this.onHomePage}/>} />
-            <Route path='/projects'exact
-              render={(props) => <Projects onHomePage={this.onHomePage}/>} />
-            <Route path='/contact'exact
-              render={(props) => <Contact onHomePage={this.onHomePage}/>} />
-            <Route path='/education'exact
-              render={(props) => <Education onHomePage={this.onHomePage}/>} />
-            <Route path='/experience'exact
-                render={(props) => <Experience onHomePage={this.onHomePage} />} />
-        </Router>
-      </div>
-    )
-  }
-}
+const HomePage = () => {
+  return (
+    <div className="homepage-bg change-font">
+      <Router basename={`${process.env.PUBLIC_URL}`}>
+        <Switch>
+          <Route path="/" exact render={() => <Main />} />
+          <>
+            <NavBar />
+            <Route path="/about" exact render={() => <About />} />
+            <Route path="/projects" exact render={() => <Projects />} />
+            <Route path="/contact" exact render={() => <Contact />} />
+            <Route path="/education" exact render={() => <Education />} />
+            <Route path="/experience" exact render={() => <Experience />} />
+          </>
+        </Switch>
+      </Router>
+    </div>
+  );
+};
 
 export default HomePage;

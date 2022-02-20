@@ -3,11 +3,6 @@
   background-color: #141414;
 }
 
-.change-font {
-  font-family: Roboto;
-  color: white;
-}
-
 .about {
   color: white;
 }
@@ -28,12 +23,6 @@
 .outer-card{
   margin-bottom: 50px;
   margin-right: 20px;
-}
-
-
-.cursive-font {
-  font-family: 'Courgette', cursive;
-  color: white;
 }
 
 

@@ -8,7 +8,7 @@ const Main = () => {
       <div className="text-center tag first-column">
         <h1 className="cursive-font heading-size">Cole Clark</h1>
         <h3 className="regular-font">Software Engineer</h3>
-        <div className="justify-content-center">
+        <div className="page-links">
           <NavLink to="/about" className="menu-item">
             About
           </NavLink>

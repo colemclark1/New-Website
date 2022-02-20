@@ -48,6 +48,8 @@
   color: #13eba2;
 }
 
+
+
 .pic {
   background-image: url("../images/Me.jpeg");
   background-position: center;
@@ -85,7 +87,12 @@
 }
 
 .row-links {
-  padding-top: 75px;
+  margin-top: 80px;
+}
+
+.page-links {
+  font-weight: 500;
+  margin-top: 40px
 }
 
 .row {

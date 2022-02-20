@@ -95,11 +95,6 @@
   margin-top: 40px
 }
 
-.row {
-  margin-left: unset;
-  margin-right: unset;
-}
-
 @keyframes fadein {
   from {
     opacity: 0;

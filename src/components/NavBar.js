@@ -1,36 +1,36 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import "../CSS/NavBar.css";
 
 const NavBar = () => {
+  const active = 'active'
+
   return (
     <div className="nav-bg">
       <Navbar expand="lg" className="nav">
-        <Link to="/">
-          <Navbar.Brand>
-            <p className="nav-brand">Cole Clark</p>
-          </Navbar.Brand>
-        </Link>
+        <NavLink exact to="/" className={'nav-brand'} activeClassName={active}>
+            Cole Clark
+        </NavLink>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Link to="/about" className="nav-link">
-              <p className="nav-item">About</p>
-            </Link>
-            <Link to="/projects" className="nav-link">
-              <p className="nav-item">Projects</p>
-            </Link>
-            <Link to="/experience" className="nav-link">
-              <p className="nav-item">Experience</p>
-            </Link>
-            <Link to="/education" className="nav-link">
-              <p className="nav-item">Education</p>
-            </Link>
-            <Link to="/contact" className="nav-link">
-              <p className="nav-item">Contact</p>
-            </Link>
+            <NavLink to="/about" className="menu-item" activeClassName={active}>
+              About
+            </NavLink>
+            <NavLink to="/projects" className="menu-item">
+              Projects
+            </NavLink>
+            <NavLink to="/experience" className="menu-item">
+             Experience
+            </NavLink>
+            <NavLink to="/education" className="menu-item">
+              Education
+            </NavLink>
+            <NavLink to="/contact" className="menu-item">
+              Contact
+            </NavLink>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

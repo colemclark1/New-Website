@@ -4,7 +4,6 @@ import PictureRow from "./PictureRow";
 import "../CSS/About.css";
 
 const About = () => {
-
   return (
     <div className="container-fluid">
       <div className="container col-11">

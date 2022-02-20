@@ -4,7 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import "../CSS/NavBar.css";
 
-const NavBar = ({ theme }) => {
+const NavBar = () => {
   return (
     <div className="nav-bg">
       <Navbar expand="lg" className="nav">

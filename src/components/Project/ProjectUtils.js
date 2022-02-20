@@ -1,5 +1,5 @@
 import PrattleImage from "../../images/prattle.jpg";
-import SpotifyImage from "../../images/PlaylistManager.JPG";
+import SpotifyImage from "../../images/PlaylistManager.jpg";
 import Me from "../../images/web.jpg";
 import JustMove from "../../images/JustMove.jpg";
 import AIProject from "../../images/AIProject.jpg";

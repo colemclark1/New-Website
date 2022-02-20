@@ -13,7 +13,7 @@ const PictureRow = () => {
       </div>
       <div className="col-2">
         <span class="helper"></span>
-        <img className="img-fluid" src={require("../images/ATV.JPG")} />
+        <img className="img-fluid" src={require("../images/ATV.jpg")} />
       </div>
       <div className="col-2 justify-content-center">
         <span class="helper"></span>

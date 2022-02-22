@@ -8,9 +8,9 @@ import style from "../CSS/Main.module.css";
 
 const Main = () => {
   return (
-    <Grid className={style.main}>
-      <Row>
-        <Col size={1} className={style.centerNav}>
+    <Grid className={style.main} minHeight={"100vh"}>
+      <Row  minHeight={"100vh"}>
+        <Col size={1} className={style.centerNav}  minHeight={"100vh"}>
           <h1 className={style.name}>Cole Clark</h1>
           <h3 className={style.jobTitle}>Software Engineer</h3>
           <div className={style.pageLinks}>

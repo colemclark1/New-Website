@@ -1,87 +1,67 @@
 import React, { Component } from "react";
-import Card from "react-bootstrap/Card";
-import Collapse from "react-bootstrap/Collapse";
-import Badge from "react-bootstrap/Badge";
-import "../../CSS/Projects.css";
+import { Link } from 'react-router-dom';
+import { Row, Col } from "../Utils";
+import { FaPlus, FaMinus } from "react-icons/fa";
+import { Collapse } from "react-bootstrap";
+import style from "../../CSS/Project.module.css";
 
 const Project = (props) => {
-  const [displayDetails, clickDetails] = React.useState(false);
-
+  const [displayDetails, setDisplayDetails] = React.useState(false);
   return (
-    <div className="outer-card projects-font">
-      <Card className="cards-change-font " bg="light" text="dark">
-        <div className="row justify-content-center">
-          <Card.Header className="mb-0 col-12">
-            <Card.Title className="row justify-content-center">
-              {props.project.title}
-            </Card.Title>
-          </Card.Header>
-        </div>
-        <Card.Img
-          variant="top"
-          src={props.project.image}
-          className="images"
-          style={{ minHeight: "10rem", maxHeight: "20rem" }}
-        />
-        <Card.Body>
-          <div className="row justify-content-center">
-            {props.project.deployed !== "" && (
-              <Card.Link href={props.project.deployed}>
-                Deployed Project
-              </Card.Link>
-            )}
-          </div>
-          <div className="row justify-content-center">
-            {props.project.github !== "" && (
-              <Card.Link href={props.project.github}>
-                Project on Github
-              </Card.Link>
-            )}
-          </div>
-          <div className="row justify-content-center">
-            {props.project.kaggle !== "" && (
-              <Card.Link href={props.project.github}>
-                Project Data on Kaggle
-              </Card.Link>
-            )}
-          </div>
-          <div className="row justify-content-center wrap-text">
-            {props.project.tags.map((tag, i) => (
-              <h6 key={i}>
-                <Badge className="mr-2 mt-1" pill variant="primary">
-                  {tag}
-                </Badge>
-              </h6>
-            ))}
-          </div>
-
-          <div className="row justify-content-center">
-            {!displayDetails && (
-              <button
-                onClick={() => clickDetails(!displayDetails)}
-                aria-expanded={false}
-                className="btn details-button justify-content-center"
-              >
-                Details <i className="fa fa-angle-double-down"></i>
-              </button>
-            )}
-
-            {displayDetails && (
-              <button
-                onClick={() => clickDetails(!displayDetails)}
-                aria-expanded={true}
-                className="btn details-button justify-content-center"
-              >
-                <i className="fa fa-angle-double-up"></i>
-              </button>
-            )}
-          </div>
-        </Card.Body>
+    <Col
+      className={style.projectRow}
+    >
+      <Row onClick={() => setDisplayDetails(!displayDetails)}>
+        <Col size={1} className={style.arrow} collapse={"xs"}>
+          {!!displayDetails ? (
+            <FaMinus size={"12px"} />
+          ) : (
+            <FaPlus size={"12px"} />
+          )}
+        </Col>
+        <Col size={15} className={style.title}>
+          {props.project.title}
+        </Col>
+        <Col className={style.type} size={5} collapse={"sm"}>
+          {props.project.type}
+        </Col>
+      </Row>
+      {
         <Collapse in={displayDetails}>
-          <Card.Text>{props.project.textShort}</Card.Text>
+          <div className={style.details}>
+            <Row>
+              <Col size={1} collapse={"xs"}></Col>
+              <Col size={15} className={style.textShort}>
+                {props.project.textShort}
+              </Col>
+            </Row>
+            {props.project.github && (
+              <Row>
+                <Col size={1} collapse={"xs"}></Col>
+                <Col size={15}>
+                  <Link
+                    to={{ pathname: props.project.github }}
+                    target="_blank"
+                  >Github</Link>
+                </Col>
+              </Row>
+            )}
+            {props.project.deployed && (
+              <Row>
+                <Col size={1} collapse={"xs"}></Col>
+                <Col size={15}>
+                  {" "}
+                  <Link
+                    to={{ pathname: props.project.deployed }}
+                    target="_blank"
+                  >Project</Link>
+                </Col>
+              </Row>
+            )}
+          </div>
         </Collapse>
-      </Card>
-    </div>
+      }
+    </Col>
   );
 };
 

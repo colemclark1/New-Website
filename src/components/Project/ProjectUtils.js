@@ -5,6 +5,12 @@ import JustMove from "../../images/JustMove.jpg";
 import AIProject from "../../images/AIProject.jpg";
 import ClimateTree from "../../images/climate_tree.jpg";
 
+const webApp = "Web Application";
+const webServer = "Web Server";
+const aiModel = "AI Model";
+const mobileApp = "Mobile Application";
+const arduinoApp = "Arduino";
+
 export const projects = [
     {
       title: "Climate Tree",
@@ -24,6 +30,7 @@ export const projects = [
         "Azure",
         "Back-end Development",
       ],
+      type: webApp
     },
     {
       title: "Spotify API Playlist Manager",
@@ -45,6 +52,7 @@ export const projects = [
         "Spotify API",
         "Web Development",
       ],
+      type: webApp
     },
     {
       title: "Prattle Messaging Server",
@@ -55,6 +63,7 @@ export const projects = [
       textShort:
         "As a group project at Northeastern University, our group enhanced a messaging system using Java, Maven, MySQL, and an Amazon Web Server. We designed and implemented the follwing functionalities: user sign-on with username and password, adding and managing user groups, sending private and group messages, queuing messages for offline users, toggling parental controls, and searching for messages.",
       tags: ["Java", "Maven", "Sockets", "MySQL", "Agile"],
+      type: webServer
     },
     {
       title: "Artificial Intelligence Project",
@@ -74,6 +83,7 @@ export const projects = [
         "Classification",
         "scikit-learn",
       ],
+      type: aiModel
     },
     {
       title: "Personal Website",
@@ -91,6 +101,7 @@ export const projects = [
         "HTML",
         "CSS",
       ],
+      type: webApp
     },
     {
       title: "Just Move (Android App)",
@@ -102,5 +113,19 @@ export const projects = [
       textShort:
         "An Android app that generates high-intensity interval workouts based on the user specified equipment and exercises. This app was created using Java and XML in AndroidStudio (still in progress).",
       tags: ["Java", "Android", "Andorid Studio", "XML"],
+      type: mobileApp
     },
+    {
+      title: "LED Visualizer",
+      link: "",
+      deployed: "",
+      github: "",
+      kaggle: "",
+      textShort:
+        "An Android app that generates high-intensity interval workouts based on the user specified equipment and exercises. This app was created using Java and XML in AndroidStudio (still in progress).",
+      tags: ["Arduino", "Hardware"],
+      type: arduinoApp
+    },
+
+
   ];

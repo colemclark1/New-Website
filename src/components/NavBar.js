@@ -2,19 +2,19 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import { FaBars } from 'react-icons/fa';
 import "../CSS/NavBar.css";
 
 const NavBar = () => {
   const active = 'active'
 
   return (
-    <div className="nav-bg">
-      <Navbar expand="lg" className="nav">
+      <Navbar expand="lg" className="nav" >
         <NavLink exact to="/" className={'nav-brand'} activeClassName={active}>
             Cole Clark
         </NavLink>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Toggle><FaBars color="#13EBA2"/></Navbar.Toggle> 
+        <Navbar.Collapse >
           <Nav className="mr-auto">
             <NavLink to="/about" className="menu-item" activeClassName={active}>
               About
@@ -34,7 +34,6 @@ const NavBar = () => {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-    </div>
   );
 };
 export default NavBar;

@@ -1,6 +1,4 @@
 .main {
-  height: 100vh;
-  width: 100vw;
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 2s; /* Firefox < 16 */
   -ms-animation: fadein 2s; /* Internet Explorer */
@@ -17,6 +15,8 @@
 .social {
   font-family: "Nunito", sans-serif;
   color: #13eba2;
+  margin-right: 30px;
+  display: inline-block;
 }
 
 .social:hover {
@@ -34,12 +34,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
 }
 
 .fill img{
-  min-width: 100%;
-  min-height: 100%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -55,6 +54,7 @@
   border-bottom: 3px solid #141414;
   color: #13EBA2;
   margin: 10px;
+  display: inline-block;
 }
 
 .menuItem:hover {
@@ -70,7 +70,7 @@
 
 .pageLinks {
   font-weight: 500;
-  margin-top: 40px
+  margin-top: 40px;
 }
 
 @keyframes fadein {

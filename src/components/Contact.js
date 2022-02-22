@@ -1,4 +1,7 @@
 import React from "react";
+import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
+import style from "../CSS/Main.module.css";
+
 import "../CSS/Contact.css";
 
 const Contact = () => {
@@ -9,20 +12,23 @@ const Contact = () => {
           href="https://www.linkedin.com/in/coleclark1/"
           target="_blank"
           rel="noopener noreferrer"
-          className="social mx-4"
+          className={`${style.social} mx-4`}
         >
-          <i className="fa fa-linkedin fa-3x"></i>
+          <FaLinkedin size={"48px"} />
         </a>
-        <a href="mailto:colemclark1@gmail.com" className="social mx-4">
-          <i className="fa fa-envelope fa-3x"></i>
+        <a
+          href="mailto:colemclark1@gmail.com"
+          className={`${style.social} mx-4`}
+        >
+          <FaEnvelope size={"48px"} />
         </a>
         <a
           href="https://github.com/colemclark1"
           target="_blank"
           rel="noopener noreferrer"
-          className="social mx-4"
+          className={`${style.social} mx-4`}
         >
-          <i className="fa fa-github-square fa-3x"></i>
+          <FaGithub size={"48px"} />
         </a>
       </div>
     </div>

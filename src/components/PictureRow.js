@@ -5,7 +5,11 @@ const PictureRow = () => {
     <div className="container row picture-row">
       <div className="col-2">
         <span class="helper"></span>
-        <img className="img-fluid" src={require("../images/Me.jpeg")} />
+        <img className="img-fluid"
+            src={
+              `${process.env.REACT_APP_COS}/Me.jpeg`
+            }
+          />
       </div>
       <div className="col-2">
         <span class="helper"></span>

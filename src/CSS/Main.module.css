@@ -1,7 +1,6 @@
 .main {
   height: 100vh;
   width: 100vw;
-  display: flex;
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 2s; /* Firefox < 16 */
   -ms-animation: fadein 2s; /* Internet Explorer */
@@ -9,26 +8,9 @@
   animation: fadein 2s;
 }
 
-
-.tag {
-  padding-top: 10%;
-  border-right: 10px solid #13eba2;
-}
-
-.first-column {
-  flex: 30%
-}
-
-.second-column {
-  flex: 70%;
-}
-
-.cursive-font {
+.name {
   font-family: "Courgette", cursive;
   color: #13eba2;
-}
-
-.heading-size {
   font-size: 80px;
 }
 
@@ -41,21 +23,11 @@
   color: white;
 }
 
-.regular-font {
+.jobTitle {
   font-family: "Nunito", sans-serif;
   font-weight: 500;
   font-size: 40px;
   color: #13eba2;
-}
-
-
-
-.pic {
-  background-image: url("../images/Me.jpeg");
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
 }
 
 .fill {
@@ -65,32 +37,38 @@
   overflow: hidden;
 }
 
-.fill img {
+.fill img{
   min-width: 100%;
   min-height: 100%;
   object-fit: cover;
 }
 
-.center-nav {
+.centerNav {
   align-items: center;
+  text-align: center;
+  border-right: 5px solid #13EBA2;
+  padding-top: 50px;
 }
 
-.main-item {
-  font-family: "Nunito", sans-serif;
-  color: #13eba2;
-  border-bottom: 3px solid #13eba2;
+.menuItem {
+  font-family: 'Nunito', sans-serif;
+  border-bottom: 3px solid #141414;
+  color: #13EBA2;
+  margin: 10px;
 }
 
-.main-item:hover {
-  border-bottom: 3px solid white;
+.menuItem:hover {
+  border-bottom: 3px solid #141414;
   color: white;
+  text-decoration: none;
 }
 
-.row-links {
+
+.rowLinks {
   margin-top: 80px;
 }
 
-.page-links {
+.pageLinks {
   font-weight: 500;
   margin-top: 40px
 }

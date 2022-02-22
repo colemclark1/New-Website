@@ -1,7 +1,7 @@
 import React from "react";
-import SkillBars from "./SkillBars";
-import PictureRow from "./PictureRow";
-import "../CSS/About.css";
+import SkillBars from "../Utils/SkillBars/SkillBars";
+import PictureRow from "../Utils/PictureRow";
+import "./About.css";
 
 const About = () => {
   return (

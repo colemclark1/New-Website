@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
-import { Row, Col } from "../Utils";
+import { Row, Col } from "../Utils/Utils";
 import { FaPlus, FaMinus } from "react-icons/fa";
 import { Collapse } from "react-bootstrap";
-import style from "../../CSS/Project.module.css";
+import style from "./Project.module.css";
 
 const Project = (props) => {
   const [displayDetails, setDisplayDetails] = React.useState(false);

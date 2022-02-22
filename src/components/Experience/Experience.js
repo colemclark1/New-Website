@@ -1,7 +1,7 @@
 import React from "react";
 import ExperienceBlock from "./ExperienceBlock";
 import { experience } from "./ExperienceUtils";
-import "../../CSS/Experience.css";
+import "./Experience.css";
 
 const Experience = () => {
 

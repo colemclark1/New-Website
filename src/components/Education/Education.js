@@ -1,10 +1,7 @@
 import React from "react";
 import EducationBlock from "./EducationBlock";
 import { education } from "./EducationUtils";
-import "../../CSS/Education.css";
-import "../../CSS/HomePage.css";
-
-
+import "./Education.css";
 
 const Education = () => {
 

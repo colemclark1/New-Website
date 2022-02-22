@@ -1,5 +1,5 @@
 import React from 'react'
-import '../CSS/SkillBars.css'
+import './SkillBars.css'
 
 const SkillBars = () =>
   <div className=''>

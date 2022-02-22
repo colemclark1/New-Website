@@ -1,9 +1,9 @@
 import React from "react";
 import Project from "./Project";
 import { projects } from "./ProjectUtils";
-import { Grid } from "../Utils";
+import { Grid } from "../Utils/Utils";
 
-import style from "../../CSS/Projects.module.css"
+import style from "./Projects.module.css"
 
 const Projects = () => {
   return (

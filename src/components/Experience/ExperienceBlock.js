@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../CSS/ExperienceBlock.css'
+import './ExperienceBlock.css'
 
 const ExperienceBlock = ({company, image, job_title, time, description, website_link, website_link_text}) =>
     <div className="p-4 row">

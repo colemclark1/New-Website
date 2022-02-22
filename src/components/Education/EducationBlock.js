@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../CSS/EducationBlock.css'
+import './EducationBlock.css'
 
 const EducationBlock = ({school, image, degree, graduation_time, relevant_courses, activities}) =>
     <div className='p-4 row'>

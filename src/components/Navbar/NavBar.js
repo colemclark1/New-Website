@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { FaBars } from 'react-icons/fa';
-import "../CSS/NavBar.css";
+import "./NavBar.css";
 
 const NavBar = () => {
   const active = 'active'

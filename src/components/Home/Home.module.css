@@ -11,6 +11,7 @@
   font-family: "Courgette", cursive;
   color: #13eba2;
   font-size: 80px;
+  margin-bottom: unset;
 }
 
 .social {
@@ -30,6 +31,7 @@
   font-weight: 500;
   font-size: 40px;
   color: #13eba2;
+  margin-bottom: unset;
 }
 
 .fill {
@@ -53,13 +55,16 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  min-width: 412px;
+  background-color: #141414;
 }
 
 .menuItem {
   font-family: 'Nunito', sans-serif;
   border-bottom: 3px solid #141414;
   color: #13EBA2;
-  margin: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
   display: inline-block;
 }
 
@@ -71,7 +76,7 @@
 
 
 .rowLinks {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .pageLinks {

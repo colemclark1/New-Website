@@ -1,5 +1,5 @@
 import React from "react";
-import Project from "./Project";
+import ProjectNew from "./ProjectNew";
 import { projects } from "./ProjectUtils";
 import { Grid } from "../Utils/Utils";
 
@@ -10,11 +10,11 @@ const Projects = () => {
     <div className="container-fluid">
       <div className="container col-11 text-center">
         <div className="row header page-headers">Projects</div>
-        <Grid className={style.projects}>
+        <div className={style.projects}>
           {projects.map((project, index) => 
-            <Project key={index} index={index} project={project} />
+            <ProjectNew key={index} index={index} project={project} />
           )}
-        </Grid>
+        </div>
       </div>
     </div>
   );

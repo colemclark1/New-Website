@@ -1,15 +1,15 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Projects from "./Project/Projects";
-import Contact from "./Contact";
+import Contact from "./Contact/Contact";
 import Education from "./Education/Education";
 import Experience from "./Experience/Experience";
-import About from "./About";
-import Main from "./Main";
-import NavBar from "./NavBar";
-import "../CSS/HomePage.css";
+import About from "./About/About";
+import Main from "./Home/Home";
+import NavBar from "./Navbar/NavBar";
+import "./App.css";
 
-const HomePage = () => {
+const App = () => {
   return (
     <div className="homepage-bg change-font">
       <Router basename={`${process.env.PUBLIC_URL}`}>
@@ -29,4 +29,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default App;

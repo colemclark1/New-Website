@@ -13,23 +13,23 @@ const PictureRow = () => {
       </div>
       <div className="col-2">
         <span class="helper"></span>
-        <img className="img-fluid" src={require("../images/Swim.jpg")} />
+        <img className="img-fluid" src={require("../../images/Swim.jpg")} />
       </div>
       <div className="col-2">
         <span class="helper"></span>
-        <img className="img-fluid" src={require("../images/ATV.jpg")} />
+        <img className="img-fluid" src={require("../../images/ATV.jpg")} />
       </div>
       <div className="col-2 justify-content-center">
         <span class="helper"></span>
-        <img className="img-fluid" src={require("../images/pond.jpg")} />
+        <img className="img-fluid" src={require("../../images/pond.jpg")} />
       </div>
       <div className="col-2">
         <span class="helper"></span>
-        <img className="img-fluid" src={require("../images/Utah_2.jpg")} />
+        <img className="img-fluid" src={require("../../images/Utah_2.jpg")} />
       </div>
       <div className="col-2">
         <span class="helper"></span>
-        <img className="img-fluid" src={require("../images/snuba.jpg")} />
+        <img className="img-fluid" src={require("../../images/snuba.jpg")} />
       </div>
     </div>
   );

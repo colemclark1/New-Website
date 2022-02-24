@@ -1,16 +1,16 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
-import { Grid, Row, Col } from "./Utils";
+import { Grid, Row, Col } from "../Utils/Utils";
 
-import style from "../CSS/Main.module.css";
+import style from "./Home.module.css";
 
 
-const Main = () => {
+const Home = () => {
   return (
-    <Grid className={style.main}>
-      <Row>
-        <Col size={1} className={style.centerNav}>
+    <Grid className={style.main} minHeight={"100vh"}>
+      <Row  minHeight={"100vh"}>
+        <Col size={1} className={style.centerNav}  minHeight={"100vh"}>
           <h1 className={style.name}>Cole Clark</h1>
           <h3 className={style.jobTitle}>Software Engineer</h3>
           <div className={style.pageLinks}>
@@ -66,4 +66,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default Home;

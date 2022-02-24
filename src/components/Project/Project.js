@@ -1,87 +1,102 @@
-import React, { Component } from "react";
-import Card from "react-bootstrap/Card";
-import Collapse from "react-bootstrap/Collapse";
-import Badge from "react-bootstrap/Badge";
-import "../../CSS/Projects.css";
+import React from "react";
+import style from "./Project.module.css";
+import { Badge, Collapse } from "react-bootstrap";
+import {
+  FaChevronUp,
+  FaChevronDown,
+  FaGithub,
+  FaExternalLinkAlt,
+} from "react-icons/fa";
 
 const Project = (props) => {
-  const [displayDetails, clickDetails] = React.useState(false);
+  const video = React.useRef(null);
+
+  React.useEffect(() => {
+    if (video && video.current) {
+      if (!props.display) {
+        video.current.pause();
+      }
+    }
+  }, [props.display]);
 
   return (
-    <div className="outer-card projects-font">
-      <Card className="cards-change-font " bg="light" text="dark">
-        <div className="row justify-content-center">
-          <Card.Header className="mb-0 col-12">
-            <Card.Title className="row justify-content-center">
-              {props.project.title}
-            </Card.Title>
-          </Card.Header>
+    <>
+      <div
+        className={`${style.card} ${props.display ? style.active : ""}`}
+        onClick={props.setDisplayIndex}
+      >
+        <div className={style.cardUpper}>
+          <img src={props.project.image} className={style.picture}></img>
+          <div className={style.body}>
+            <div className={style.title}>{props.project.title}</div>
+            <div className={style.textShort}>{props.project.textShort}</div>
+            <div className={style.type}>
+              <Badge pill bg="none" className={style.badge}>
+                {props.project.type}
+              </Badge>
+              <div className={style.links}>
+              {!!props.project.deployed && (
+                  <a href={props.project.deployed} target="_blank">
+                    <FaExternalLinkAlt />
+                  </a>
+                )}
+                {!!props.project.github && (
+                  <a href={props.project.github} target="_blank">
+                    <FaGithub  />
+                  </a>
+                )}
+                </div>
+            </div>
+          </div>
         </div>
-        <Card.Img
-          variant="top"
-          src={props.project.image}
-          className="images"
-          style={{ minHeight: "10rem", maxHeight: "20rem" }}
-        />
-        <Card.Body>
-          <div className="row justify-content-center">
-            {props.project.deployed !== "" && (
-              <Card.Link href={props.project.deployed}>
-                Deployed Project
-              </Card.Link>
-            )}
-          </div>
-          <div className="row justify-content-center">
-            {props.project.github !== "" && (
-              <Card.Link href={props.project.github}>
-                Project on Github
-              </Card.Link>
-            )}
-          </div>
-          <div className="row justify-content-center">
-            {props.project.kaggle !== "" && (
-              <Card.Link href={props.project.github}>
-                Project Data on Kaggle
-              </Card.Link>
-            )}
-          </div>
-          <div className="row justify-content-center wrap-text">
-            {props.project.tags.map((tag, i) => (
-              <h6 key={i}>
-                <Badge className="mr-2 mt-1" pill variant="primary">
-                  {tag}
-                </Badge>
-              </h6>
-            ))}
-          </div>
+        <div className={style.cardLower}>
+          {props.display ? (
+            <FaChevronUp size={"12px"} />
+          ) : (
+            <FaChevronDown size={"12px"} />
+          )}
+        </div>
+      </div>
 
-          <div className="row justify-content-center">
-            {!displayDetails && (
-              <button
-                onClick={() => clickDetails(!displayDetails)}
-                aria-expanded={false}
-                className="btn details-button justify-content-center"
-              >
-                Details <i className="fa fa-angle-double-down"></i>
-              </button>
-            )}
+      {
+        <Collapse in={props.display}>
+          <div
+            className={`${style.fullWidthCard} ${
+              props.display ? style.active : ""
+            }`}
+          >
+            <div className={style.firstCol}>
+              <div>
 
-            {displayDetails && (
-              <button
-                onClick={() => clickDetails(!displayDetails)}
-                aria-expanded={true}
-                className="btn details-button justify-content-center"
-              >
-                <i className="fa fa-angle-double-up"></i>
-              </button>
+                <div className={style.year}>{props.project.year}</div>
+                <div className={style.for}>{props.project.for}</div>
+
+              </div>
+              <div className={style.textLong}>{props.project.textLong}</div>
+              <div className={style.tech}>
+                {props.project.tech.map((techBadge, i) => (
+                  <Badge pill key={i} bg="none">
+                    {techBadge}
+                  </Badge>
+                ))}
+              </div>
+            </div>
+            {!!props.project.video && (
+              <div className={style.secondCol}>
+                <video
+                  preload="auto"
+                  ref={video}
+                  controls
+                  className={style.video}
+                >
+                  <source src={props.project.video} type="video/mp4" />
+                </video>
+              </div>
             )}
           </div>
-        </Card.Body>
-        <Collapse in={displayDetails}>
-          <Card.Text>{props.project.textShort}</Card.Text>
         </Collapse>
-      </Card>
-    </div>
+      }
+    </>
   );
 };
 

@@ -2,13 +2,13 @@ import styled from 'styled-components';
 
 
 export const Grid = styled.div`
-    min-height: 100vh;
+    min-height: ${(props) => props.minHeight};
 `;
 
 export const Row = styled.div`
     display: flex;
     height: ${(props) => props.height};
-    min-height: 100vh;
+    min-height: ${(props) => props.minHeight};
 `;
 
 export const Col = styled.div`
@@ -17,7 +17,7 @@ export const Col = styled.div`
         display: none;
     `)}
     height: ${(props) => props.height};
-    min-height: 100vh;
+    min-height: ${(props) => props.minHeight};
 `;
 
 const media = {

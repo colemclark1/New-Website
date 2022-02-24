@@ -1,3 +1,8 @@
+html {
+  background-color: #141414;
+
+}
+
 .homepage-bg{
   background-color: #141414;
   min-height: 100vh;
@@ -35,4 +40,8 @@
 
 .bottom-portion {
   background-color: gray
+}
+
+a {
+  text-decoration: unset !important;
 }

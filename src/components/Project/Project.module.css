@@ -26,6 +26,7 @@
 .type {
   display: flex;
   flex-direction: row;
+  height: 20.4px;
 }
 
 .links {

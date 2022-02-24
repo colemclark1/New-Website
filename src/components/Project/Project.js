@@ -37,12 +37,12 @@ const Project = (props) => {
               <div className={style.links}>
               {!!props.project.deployed && (
                   <a href={props.project.deployed} target="_blank">
-                    <FaExternalLinkAlt size="20px" />
+                    <FaExternalLinkAlt />
                   </a>
                 )}
                 {!!props.project.github && (
                   <a href={props.project.github} target="_blank">
-                    <FaGithub size="20px" />
+                    <FaGithub  />
                   </a>
                 )}
                 </div>

@@ -88,7 +88,7 @@ export const projects = [
   },
   {
     title: "Personal Website",
-    image: Me,
+    image: `${process.env.REACT_APP_COS}/website-screenshot.JPG`,
     deployed: "http://www.colemclark.com",
     github: "https://github.com/colemclark1/My-Personal-Website",
     textShort: "Learn more about me",

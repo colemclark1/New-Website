@@ -1,9 +1,10 @@
 import PrattleImage from "../../images/prattle.jpg";
 import SpotifyImage from "../../images/PlaylistManager.jpg";
-import Me from "../../images/web.jpg";
 import JustMove from "../../images/JustMove.jpg";
 import AIProject from "../../images/AIProject.jpg";
 import ClimateTree from "../../images/climate_tree.jpg";
+import FantasyFootball from "../../images/fantasy-football.jpg";
+
 
 const webApp = "Web Application";
 const webServer = "Web Server";
@@ -22,7 +23,6 @@ export const projects = [
       "Web application for searching and discussing climate change solutions from around the world",
     textLong:
       "As a class of about 25 students, we created a web application for finding and discussing climate change solutions from around the world. I led a sub-team of about 6 students where our primary responisibility was to create and manage a database containing data (population, population density, carbon, longitude/latitude, climate types, etc. ) from places (cities, states, nations) around the world. We were given a large amount of raw data that we had to cleanse and standardize before placing it into a database. Once cleansed, I wrote a script to create the database, create the tables, and add the associated records. We used a PostgreSQL relational database for storage. Our team then designed and implemented a Spring Boot Server and a RESTful API in Java for retrieving information from the database. Our API was then used by the frontend team to retreive the information. We also integrated our data with GeoServer.",
-    deployed: "https://www.climatetree.wiki",
     github: "https://github.com/climatetree",
     tech: [
       "JavaScript",
@@ -44,15 +44,12 @@ export const projects = [
       "Web application for managing users and playlists with the Spotify API",
     textLong:
       "I worked in a team of three people for a class project at Northeastern University where we built a web application using the Spotify Developers API. The front end was created using React and the back end was built using Java, JPA (Java Persistence API), and a MySQL database. Our application supported all user CRUD operations and allowed users to register as a user or a reviewer. Users are able to search for songs or artists, create and delete playlists, add and delete songs to playlists, follow other users, favorite songs, see reviews for songs, and listen to previews of songs. Reviewers can add reviews to songs and delete their own reviews from songs.",
-    deployed: "https://cs5610-project-spotify-react.herokuapp.com/",
     github: "",
     tech: [
-      "JavaScript",
       "React",
       "HTML/CSS",
       "Spring Boot Server",
       "Java",
-      "JPA",
       "MySQL",
       "Spotify API",
     ],
@@ -125,5 +122,17 @@ export const projects = [
     for: personal,
     year: 2021,
     video: `${process.env.REACT_APP_COS}/IMG_5108.MOV`,
+  },
+  {
+    title: "Fantasy Football Leaders",
+    image: FantasyFootball,
+    deployed: "https://www.fantasyfootballstartinglineup.com",
+    github: "",
+    textShort: "Fantasy football weekly and season leaders",
+    textLong: "I created a website to keep track of weekly and season long statistics for our fantasy football league. I automated the process of creating a weekly email summary. The web application is built on a GoLang backend hosted on Google Cloud and a React frontend hosted on AWS Amplify.",
+    tech: ["Go", "React", "Goolge Cloud", "AWS Amplify"],
+    type: webApp,
+    for: personal,
+    year: 2023,
   },
 ];

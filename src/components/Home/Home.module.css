@@ -56,12 +56,11 @@
   align-items: center;
   flex-direction: column;
   min-width: 412px;
-  background-color: #141414;
 }
 
 .menuItem {
   font-family: 'Nunito', sans-serif;
-  border-bottom: 3px solid #141414;
+  border-bottom: 3px solid transparent;
   color: #13EBA2;
   margin-left: 10px;
   margin-right: 10px;
@@ -69,7 +68,7 @@
 }
 
 .menuItem:hover {
-  border-bottom: 3px solid #141414;
+  border-bottom: 3px solid white;
   color: white;
   text-decoration: none;
 }

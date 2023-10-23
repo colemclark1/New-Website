@@ -1,6 +1,7 @@
 .card {
   margin-bottom: 1rem;
   border: 2px solid #212020;
+  background-color: #141414;
 }
 
 .cardUpper, .fullWidthCard {
@@ -137,5 +138,17 @@
   margin-right: 5px;
   background-color: #13eba2;
   color: #141414 !important;
+}
+
+.topLeft {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
 }
 

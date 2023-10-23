@@ -32,11 +32,12 @@
 
  .TimeFrame {
    font-size: 20px;
-
+   text-align: right;
  }
 
  .JobDesc {
    font-size: 16px;
+   white-space: pre-line;
  }
 
  .CompanySite {

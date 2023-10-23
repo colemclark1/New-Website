@@ -8,9 +8,9 @@ export const experience = [
     {
       company: "IBM",
       image: ibm_logo,
-      job_title: "Software Engineer",
+      job_title: "Advisory Software Engineer",
       time: "April 2020 - Present",
-      description: "Software engineer at IBM Research in Cambridge, MA.",
+      description: "I have worked on the Apps@Research team within IBM Research where we build internal web applications for Researchers. During this time I have worked on multiple projects with different tech stacks. I have always been good at learning new technology on the fly so that I can quickly start contributing to new projects. \n\nWhile I have worked with many different languages and tools, my main experience the past few years has revolved around backend development in Python/Flask, TypeScript, Node.js, GraphQL, REST APIs, GoLang and PostgreSQL. I have also been a key contributor to our CI/CD pipeline implementation using Kuberenetes, Red Hat OpenShift, IBM Cloud, and Travis. On the frontend I have mainly worked with React, TypeScript, CSS, and SCSS. \n\nI've been the tech lead on multiple epics which includes working with the Product Manager and Designers through the planning and implementation stages. I led our ElasticSearch implementation for a Python/Flask application to improve user search and application performance. I also led the implemenation of a customized Gantt Chart tool used by Researchers to track project milestones.",
       website_link: "https://www.ibm.com",
       website_link_text: "www.ibm.com",
     },
